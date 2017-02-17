@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="MyBillBooks"
+                   namespace="MyBillBooks.Bean">
+  <class name="BillItem" table="BillBook" schema="MyBillBooks">
+    <id name="Id" type="System.Int32" length="64">
+      <generator class="increment" />
+    </id>
+    <property name="Date" type="System.DateTime">
+      <column name="date"/>
+    </property>
+    <property name="ItemName" type="System.String">
+      <column name="itemName" length="64"/>
+    </property>
+    <property name="ItemPrice" type="System.Double">
+      <column name="itemPrice" length="10"/>
+    </property>
+    <property name="Remark" type="System.String">
+      <column name="remark" length="256"/>
+    </property>
+  </class>
+</hibernate-mapping>

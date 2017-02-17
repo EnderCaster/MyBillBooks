@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NHibernate.Cfg;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +11,17 @@ using System.Windows.Forms;
 
 namespace MyBillBooks
 {
-    public partial class Form1 : Form
+    public partial class Form_MayBeAFakeForm : Form
     {
-        public Form1()
+        public Form_MayBeAFakeForm()
         {
             InitializeComponent();
         }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        
     }
 }
