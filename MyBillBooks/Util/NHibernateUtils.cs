@@ -10,15 +10,15 @@ namespace MyBillBooks.Util
     class NHibernateUtils
     {
         
-        //I use a class to store database information, but leave it out of git, to protect private
+        //我用UserDATA这个类储存数据库相关的信息，为了保证隐私，没有上传至git，此处请注意修改
         static string connString = "server=" + UserDATA.DATABASE_ADDRESS + ";database=" + UserDATA.DATABASE_NAME + ";User ID=" + UserDATA.DATABASE_USER + ";Password=" + UserDATA.DATABASE_PASSWORD+";Charset=utf8";
         static private Configuration config = new Configuration();
         static private ISessionFactory sessionFactory = null;
         static ThreadLocal<ISession> threadLocal = new ThreadLocal<ISession>();
         static NHibernateUtils() {
-            initSessionary();
+            initSessionFactory();
         }
-        static private void initSessionary()
+        static private void initSessionFactory()
         {
             config.Configure();
             IDictionary<string, string> property = new Dictionary<string, string>();
@@ -30,11 +30,13 @@ namespace MyBillBooks.Util
         static public ISession getCurrentSession()
         {
             ISession session = threadLocal.Value;
-            if (session==null)
+            if (session==null || !session.IsOpen)
             {
+                if (session != null)
+                {
+                    session.Close();
+                }
                 session = sessionFactory.OpenSession();
-                Console.WriteLine("Test1");
-
                 threadLocal.Value = session;
             }
             return session;

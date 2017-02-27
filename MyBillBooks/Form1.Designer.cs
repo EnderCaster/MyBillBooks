@@ -40,12 +40,14 @@
             resources.ApplyResources(this.button_AddItem, "button_AddItem");
             this.button_AddItem.Name = "button_AddItem";
             this.button_AddItem.UseVisualStyleBackColor = true;
+            this.button_AddItem.Click += new System.EventHandler(this.button_AddItem_Click);
             // 
             // button_SelectItem
             // 
             resources.ApplyResources(this.button_SelectItem, "button_SelectItem");
             this.button_SelectItem.Name = "button_SelectItem";
             this.button_SelectItem.UseVisualStyleBackColor = true;
+            this.button_SelectItem.Click += new System.EventHandler(this.button_SelectItem_Click);
             // 
             // button_Exit
             // 

@@ -15,8 +15,7 @@ namespace MyBillBooks
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form_MayBeAFakeForm());
-            new ClassForTestcs();
+            Application.Run(new Form_MayBeAFakeForm());
         }
     }
 }
