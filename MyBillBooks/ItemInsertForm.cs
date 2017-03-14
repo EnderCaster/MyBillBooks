@@ -34,6 +34,7 @@ namespace MyBillBooks
                 if (check)
                 {
                     MessageBox.Show("录入成功");
+                    reset();
                 }
             }
             else
@@ -49,7 +50,12 @@ namespace MyBillBooks
 
         private void button_Reset_Click(object sender, EventArgs e)
         {
+            reset();
+        }
+        private void reset()
+        {
             textBox_ItemName.Text = textBox_ItemPrice.Text = textBox_Remark.Text = "";
+            textBox_ItemName.Focus();
         }
     }
 }

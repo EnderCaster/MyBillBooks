@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemSelectForm));
             this.SelectDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label_sum = new System.Windows.Forms.Label();
             this.label_sumNumber = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@
             this.Controls.Add(this.label_sumNumber);
             this.Controls.Add(this.label_sum);
             this.Controls.Add(this.SelectDatePicker);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ItemSelectForm";
             this.Text = "我怎么就控制不住自己的手呢";
             this.ResumeLayout(false);

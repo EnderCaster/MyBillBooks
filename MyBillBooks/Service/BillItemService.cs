@@ -23,7 +23,7 @@ namespace MyBillBooks.Service
             else
             {
                 //打印报表
-                printReportToExcel(System.Windows.Forms.Application.StartupPath + date.Year + "年" + date.Month + "月报表.xlsx", myBill);
+                printReportToExcel( date.Year + "年" + date.Month + "月报表.xlsx", myBill);
                 return true;
             }
         }
@@ -37,7 +37,7 @@ namespace MyBillBooks.Service
             else
             {
                 //打印报表
-                printReportToExcel(System.Windows.Forms.Application.StartupPath + date.Year + "年报表.xlsx", myBill);
+                printReportToExcel( date.Year + "年报表.xlsx", myBill);
                 return true;
             }
         }
@@ -59,13 +59,7 @@ namespace MyBillBooks.Service
             }
             catch (Exception e)
             {
-                Random rand = new Random();
-                byte[] errByte = System.Text.Encoding.UTF8.GetBytes(e.ToString());
-                FileStream log = File.Create(DateTime.Now.ToLongDateString() + rand.Next().ToString() + ".log");
-                log.Write(errByte, 0, errByte.Length);
-                log.Flush();
-                MessageBox.Show("Log file:" + log.Name);
-                log.Close();
+                Log.exceptionLog(e);
                 return false;
             }
         }

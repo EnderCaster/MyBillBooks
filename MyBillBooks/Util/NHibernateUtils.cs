@@ -24,11 +24,23 @@ namespace MyBillBooks.Util
             IDictionary<string, string> property = new Dictionary<string, string>();
             property.Add("connection.connection_string", connString);
             config.AddProperties(property);
-            sessionFactory = config.BuildSessionFactory();
+            try
+            {
+                sessionFactory = config.BuildSessionFactory();
+            }
+            catch (Exception e)
+            {
+                Log.exceptionLog(e);
+                sessionFactory = null;
+            }
         }
         
         static public ISession getCurrentSession()
         {
+            if (sessionFactory == null)
+            {
+                initSessionFactory();
+            }
             ISession session = threadLocal.Value;
             if (session==null || !session.IsOpen)
             {
@@ -40,6 +52,13 @@ namespace MyBillBooks.Util
                 threadLocal.Value = session;
             }
             return session;
+        }
+        static public void releaseSessionFactory()
+        {
+            if(sessionFactory!=null && !sessionFactory.IsClosed)
+            {
+                sessionFactory.Close();
+            }
         }
 
         

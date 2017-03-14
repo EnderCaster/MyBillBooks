@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyBillBooks.Util;
+using System;
 using System.Windows.Forms;
 
 namespace MyBillBooks
@@ -12,6 +13,7 @@ namespace MyBillBooks
 
         private void button_Exit_Click(object sender, EventArgs e)
         {
+            NHibernateUtils.releaseSessionFactory();
             Application.Exit();
         }
 

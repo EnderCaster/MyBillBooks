@@ -72,14 +72,14 @@
             this.textBox_ItemPrice.Location = new System.Drawing.Point(155, 104);
             this.textBox_ItemPrice.Name = "textBox_ItemPrice";
             this.textBox_ItemPrice.Size = new System.Drawing.Size(200, 21);
-            this.textBox_ItemPrice.TabIndex = 9;
+            this.textBox_ItemPrice.TabIndex = 2;
             // 
             // textBox_ItemName
             // 
             this.textBox_ItemName.Location = new System.Drawing.Point(155, 59);
             this.textBox_ItemName.Name = "textBox_ItemName";
             this.textBox_ItemName.Size = new System.Drawing.Size(200, 21);
-            this.textBox_ItemName.TabIndex = 10;
+            this.textBox_ItemName.TabIndex = 1;
             // 
             // textBox_Remark
             // 
@@ -87,14 +87,14 @@
             this.textBox_Remark.Multiline = true;
             this.textBox_Remark.Name = "textBox_Remark";
             this.textBox_Remark.Size = new System.Drawing.Size(200, 105);
-            this.textBox_Remark.TabIndex = 11;
+            this.textBox_Remark.TabIndex = 3;
             // 
             // button_Submit
             // 
             this.button_Submit.Location = new System.Drawing.Point(74, 271);
             this.button_Submit.Name = "button_Submit";
             this.button_Submit.Size = new System.Drawing.Size(130, 41);
-            this.button_Submit.TabIndex = 12;
+            this.button_Submit.TabIndex = 4;
             this.button_Submit.Text = "提交";
             this.button_Submit.UseVisualStyleBackColor = true;
             this.button_Submit.Click += new System.EventHandler(this.button_Submit_Click);
