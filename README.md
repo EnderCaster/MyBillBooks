@@ -14,10 +14,13 @@ Microsoft.Office.Interop.Excel
 Microsoft.CSharp
 
 ## Release Note
-2017/2/27 Release 1.0  
+### 2017/3/14 Release 1.0.1  
+1. Catch more Exception and record it to file.  
+2. Pack log as Log.cs  
+### 2017/2/27 Release 1.0  
 1. Change the textbox whitch use to select date to DateTimePicker  
 2. Catch some Exceptions  
 3. Add the Form to see how much you spend  
 4. You can export year and month report now  
-2017/ I foget when I release it beta 0.1  
+### 2017/ I foget when I release it. Beta 1  
 1. Only one item can import to database without Exception
