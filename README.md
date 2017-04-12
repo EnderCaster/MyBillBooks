@@ -11,12 +11,16 @@ Visual Studio 2015
 NHibernate  
 Mysql.Data  
 Microsoft.Office.Interop.Excel  
-Microsoft.CSharp
+Microsoft.CSharp  
+Newtonsoft.json
 
 ## Release Note
+### 2017/4/12 Release 1.0.2
+1. Change hbm file compile option.  
+2. You can use ime to input text by default now!
 ### 2017/3/14 Release 1.0.1  
 1. Catch more Exception and record it to file.  
-2. Pack log as Log.cs  
+2. Pack log util as Log.cs  
 ### 2017/2/27 Release 1.0  
 1. Change the textbox whitch use to select date to DateTimePicker  
 2. Catch some Exceptions  
