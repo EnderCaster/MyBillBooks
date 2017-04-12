@@ -1381,6 +1381,9 @@
         //////////////////////////////////8=
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>我怎么就管不住我的手呢</value>
   </data>

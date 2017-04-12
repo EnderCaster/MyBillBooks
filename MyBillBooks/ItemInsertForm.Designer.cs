@@ -131,6 +131,7 @@
             this.Controls.Add(this.label_ItemPrice);
             this.Controls.Add(this.label_ItemName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "ItemInsertForm";
             this.Text = "我怎么就管不住自己的手呢";
             this.ResumeLayout(false);

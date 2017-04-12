@@ -11,6 +11,7 @@ namespace MyBillBooks.Dao
         public const int SELECT_TYPE_DAY = 1;
         public const int SELECT_TYPE_MONTH = 2;
         public const int SELECT_TYPE_YEAR = 3;
+        public const double budget = 1200;
 
         public IList<BillItem> select(DateTime date,int SELECT_TYPE)
         {
@@ -50,6 +51,6 @@ namespace MyBillBooks.Dao
             string hql = "from BillItem where date='" + date.ToShortDateString()+"'";
             IQuery query = session.CreateQuery(hql);
             return query.List<BillItem>();
-        }
+        }       
     }
 }

@@ -3,7 +3,8 @@
                    assembly="MyBillBooks"
                    namespace="MyBillBooks.Bean">
   <class name="BillItem" table="BillBook" schema="MyBillBooks">
-    <id name="Id" type="System.Int32" length="64">
+    <id name="Id" type="System.Int32">
+      <column name="id" length="64" />
       <generator class="increment" />
     </id>
     <property name="Date" type="System.DateTime">

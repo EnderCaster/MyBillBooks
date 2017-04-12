@@ -83,6 +83,9 @@
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate, Version=4.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.4.1.1.4000\lib\net40\NHibernate.dll</HintPath>
       <Private>True</Private>
@@ -99,13 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bean\BillItem.cs" />
-    <Compile Include="ClassForTestcs.cs" />
     <Compile Include="Dao\BillItemDao.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MaybeAFakeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MaybeAFakeForm.Designer.cs">
+      <DependentUpon>MaybeAFakeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemInsertForm.cs">
       <SubType>Form</SubType>
@@ -125,11 +127,11 @@
     <Compile Include="UserDATA.cs" />
     <Compile Include="Util\Log.cs" />
     <Compile Include="Util\NHibernateUtils.cs" />
-    <EmbeddedResource Include="Form1.dyo-SN.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MaybeAFakeForm.dyo-SN.resx">
+      <DependentUpon>MaybeAFakeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MaybeAFakeForm.resx">
+      <DependentUpon>MaybeAFakeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemInsertForm.resx">
       <DependentUpon>ItemInsertForm.cs</DependentUpon>
@@ -168,7 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mapping\BillItem.hbm.xml">
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
