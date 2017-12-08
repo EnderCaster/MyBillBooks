@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<connection>
+  <host>localhost</host>
+  <port>3306</port>
+  <username>root</username>
+  <password>nothing</password>
+  <database>billBook</database>
+</connection>

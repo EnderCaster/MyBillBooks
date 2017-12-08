@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyBillBooks.Util;
 
-namespace MyBillBooks
+namespace BillBookConfig
 {
     static class Program
     {
@@ -16,8 +16,7 @@ namespace MyBillBooks
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_BillBook());
-            NHibernateUtils nHibernateUtils = new NHibernateUtils();
+            Application.Run(new Configure());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MyBillBooks
 {
-    partial class Form_MayBeAFakeForm
+    partial class Form_BillBook
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_MayBeAFakeForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_BillBook));
             this.button_AddItem = new System.Windows.Forms.Button();
             this.button_SelectItem = new System.Windows.Forms.Button();
             this.button_Exit = new System.Windows.Forms.Button();
@@ -40,21 +40,21 @@
             resources.ApplyResources(this.button_AddItem, "button_AddItem");
             this.button_AddItem.Name = "button_AddItem";
             this.button_AddItem.UseVisualStyleBackColor = true;
-            this.button_AddItem.Click += new System.EventHandler(this.button_AddItem_Click);
+            this.button_AddItem.Click += new System.EventHandler(this.Button_AddItem_Click);
             // 
             // button_SelectItem
             // 
             resources.ApplyResources(this.button_SelectItem, "button_SelectItem");
             this.button_SelectItem.Name = "button_SelectItem";
             this.button_SelectItem.UseVisualStyleBackColor = true;
-            this.button_SelectItem.Click += new System.EventHandler(this.button_SelectItem_Click);
+            this.button_SelectItem.Click += new System.EventHandler(this.Button_SelectItem_Click);
             // 
             // button_Exit
             // 
             resources.ApplyResources(this.button_Exit, "button_Exit");
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.UseVisualStyleBackColor = true;
-            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            this.button_Exit.Click += new System.EventHandler(this.Button_Exit_Click);
             // 
             // _Hint
             // 

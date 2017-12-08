@@ -15,7 +15,7 @@ namespace MyBillBooks.Service
         static private BillItemDao billItemDao = new BillItemDao();
         public bool printMonthReport(DateTime date)
         {
-            IList<BillItem> myBill = billItemDao.select(date, BillItemDao.SELECT_TYPE_MONTH);
+            IList<BillItem> myBill = billItemDao.Select(date, BillItemDao.SELECT_TYPE_MONTH);
             if (myBill == null)
             {
                 return false;
@@ -29,7 +29,7 @@ namespace MyBillBooks.Service
         }
         public bool printYearReport(DateTime date)
         {
-            IList<BillItem> myBill = billItemDao.select(date, BillItemDao.SELECT_TYPE_YEAR);
+            IList<BillItem> myBill = billItemDao.Select(date, BillItemDao.SELECT_TYPE_YEAR);
             if (myBill == null)
             {
                 return false;
@@ -43,13 +43,13 @@ namespace MyBillBooks.Service
         }
         public IList<BillItem> getDayBill(DateTime date)
         {
-            return billItemDao.select(date, BillItemDao.SELECT_TYPE_DAY);
+            return billItemDao.Select(date, BillItemDao.SELECT_TYPE_DAY);
         }
         public bool saveNewBill(BillItem billItem)
         {
             try
             {
-                ISession session = NHibernateUtils.getCurrentSession();
+                ISession session = NHibernateUtils.GetCurrentSession();
                 ITransaction transaction = session.BeginTransaction();
                 transaction.Begin();
                 session.Save(billItem);
