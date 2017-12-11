@@ -47,7 +47,7 @@
             this.submitB.Location = new System.Drawing.Point(89, 249);
             this.submitB.Name = "submitB";
             this.submitB.Size = new System.Drawing.Size(75, 23);
-            this.submitB.TabIndex = 0;
+            this.submitB.TabIndex = 6;
             this.submitB.Text = "提交";
             this.submitB.UseVisualStyleBackColor = true;
             this.submitB.Click += new System.EventHandler(this.SubmitB_Click);
@@ -64,21 +64,21 @@
             this.passwordTB.Location = new System.Drawing.Point(141, 152);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(100, 21);
-            this.passwordTB.TabIndex = 2;
+            this.passwordTB.TabIndex = 4;
             // 
             // portTB
             // 
             this.portTB.Location = new System.Drawing.Point(141, 72);
             this.portTB.Name = "portTB";
             this.portTB.Size = new System.Drawing.Size(100, 21);
-            this.portTB.TabIndex = 3;
+            this.portTB.TabIndex = 2;
             // 
             // usernameTB
             // 
             this.usernameTB.Location = new System.Drawing.Point(141, 111);
             this.usernameTB.Name = "usernameTB";
             this.usernameTB.Size = new System.Drawing.Size(100, 21);
-            this.usernameTB.TabIndex = 4;
+            this.usernameTB.TabIndex = 3;
             // 
             // hostL
             // 
@@ -130,7 +130,7 @@
             this.databaseTB.Location = new System.Drawing.Point(141, 195);
             this.databaseTB.Name = "databaseTB";
             this.databaseTB.Size = new System.Drawing.Size(100, 21);
-            this.databaseTB.TabIndex = 10;
+            this.databaseTB.TabIndex = 5;
             // 
             // Configure
             // 

@@ -3,10 +3,10 @@ A book for bills, to prevent pre-cost
 ## RunTime  
 .Net 4.5  
 ## Compile Environment
-***Notice*** You should edit NHibernateUtils.cs to modify your database connection infomation  
+***Notice*** Remember to modify your database connection infomation in Data folder  
 
 .Net 4.5  
-Visual Studio 2015  
+Visual Studio 2017  
 ### Relate Package  
 NHibernate  
 Mysql.Data  
@@ -15,6 +15,9 @@ Microsoft.CSharp
 Newtonsoft.json
 
 ## Release Note
+### 2017/12/8 Release 1.1
+1. Change data storage from .cs to Data Folder, you can use it without recompile
+2. The startup will be slow, I moved session factory initialize to there
 ### 2017/4/12 Release 1.0.2
 1. Change hbm file compile option.  
 2. You can use ime to input text by default now!
